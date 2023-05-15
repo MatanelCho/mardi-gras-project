@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FQA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+</head>
+
+<style>
+    header {
+        background-color: purple;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 120px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 80px;
+    }
+
+    nav a {
+        color: #000;
+        text-decoration: none;
+        font-family: 'Pattaya';
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+        color: #f2cc0f
+    }
+
+    .nav-icon {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    #menuToggle:checked~ul {
+        transform: translateX(0%);
+    }
+
+    footer img {
+        height: 50px;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    @media (min-width:250px) and (max-width: 350px) {
+
+        nav ul {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            height: 100vh;
+            width: 200px;
+            flex-direction: column;
+            background-color: #8cbf3f;
+            align-items: flex-start;
+            padding: 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-icon {
+            display: block;
+        }
+
+
+        .main-content {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        label.nav-icon {
+            display: inline-block;
+        }
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="mardiLogo.png" alt="Mardi Gras logo">
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-">
+
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li><a href="Page1.html">Home</a></li>
+                    <li><a href="page2.html">About</a></li>
+                    <li><a href="page3.html">Media</a></li>
+                    <li><a href="page4.html">FQA</a></li>
+                    <li><a href="page5.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What is Mardi Gras?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Mardi Gras is a carnival celebration, primarily held in New Orleans, Louisiana, that takes place
+                    before the Christian
+                    season of Lent. It is a festive occasion filled with parades, music, colorful costumes, and
+                    indulgence in food and
+                    drinks.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    When is Mardi Gras celebrated?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Mardi Gras is celebrated on the day before Ash Wednesday, which can fall between February 3 and
+                    March 9, depending on
+                    the date of Easter. The exact date varies each year.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is the significance of the colors used in Mardi Gras?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The colors used in Mardi Gras have symbolic meanings. Purple represents justice, green represents
+                    faith, and gold
+                    represents power. These colors are often seen in costumes, decorations, and traditional Mardi Gras
+                    beads.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What are the main traditions of Mardi Gras?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Some of the main traditions of Mardi Gras include parades featuring colorful floats and marching
+                    bands, masked balls and
+                    parties, throwing and catching of Mardi Gras beads, and the selection of a Mardi Gras king and
+                    queen.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Is Mardi Gras celebrated only in New Orleans?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    While New Orleans is famous for its Mardi Gras celebrations, the festival is also celebrated in
+                    other parts of the
+                    world, including Rio de Janeiro (Brazil), Venice (Italy), and Mobile (Alabama, USA). However, New
+                    Orleans is known for
+                    its unique and vibrant Mardi Gras traditions.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    What are some popular Mardi Gras foods?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Popular Mardi Gras foods include King Cake, a sweet pastry often filled with cinnamon or fruit and
+                    topped with colorful
+                    icing and sugar; Gumbo, a hearty stew with meat, seafood, and vegetables; and Jambalaya, a spicy
+                    rice dish with meat,
+                    sausage, and vegetables.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/MardiGrasNewOrleans"><img src="facebookIcon.png" alt="Facebook"
+                        target="_blank"></a>
+                <a href="https://www.instagram.com/mardigrasneworleans/"><img src="Insta2.png" alt="Instagram"
+                        target="_blank"></a>
+                <a href="https://twitter.com/MardiGrasNOLA"><img src="twitterIcon.png" alt="Twitter"
+                        target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"><img src="YouTube2.png" alt="Twitter"
+                        target="_blank"></a>
+                <br> <br>
+
+                <p>&copy; 2023 Mardi Gras. All rights reserved. Designed by Matanel Chouraqui.</p>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+        document.querySelector(".nav-icon").addEventListener("click", function () {
+            document.querySelector("nav ul").classList.toggle("active");
+        }
+        );
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

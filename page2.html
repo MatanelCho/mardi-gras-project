@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+</head>
+<style>
+    header {
+        background-color: purple;
+        ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 120px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 80px;
+    }
+
+    nav a {
+        color: #000;
+        text-decoration: none;
+        font-family: 'Pattaya';
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+        color: #f2cc0f;
+    }
+
+    .nav-icon {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    #menuToggle:checked~ul {
+        transform: translateX(0%);
+    }
+
+    footer img {
+        height: 50px;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: purple;
+        font-family: 'Pattaya';
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        font-family: 'Roboto';
+    }
+
+    main p {
+        font-family: 'Roboto';
+    }
+
+    .mayor img {
+        width: 320px;
+
+    }
+
+    .mayor img {
+        width: 100%;
+        height: auto;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+
+    @media (min-width:250px) and (max-width: 350px) {
+
+        nav ul {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            height: 100vh;
+            width: 200px;
+            flex-direction: column;
+            background-color: #8cbf3f;
+            align-items: flex-start;
+            padding: 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-icon {
+            display: block;
+        }
+
+
+        .main-content {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        label.nav-icon {
+            display: inline-block;
+        }
+
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="mardiLogo.png" alt="Mardi Gras logo">
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-">
+
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li><a href="Page1.html">Home</a></li>
+                    <li><a href="page2.html">About</a></li>
+                    <li><a href="page3.html">Media</a></li>
+                    <li><a href="page4.html">FQA</a></li>
+                    <li><a href="page5.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <section>
+            <h2>What is Mardi Gras?</h2>
+            <p>Mardi Gras, also known as Fat Tuesday, is a carnival celebration that occurs before the religious season
+                of
+                Lent. It is celebrated in many countries around the world, with New Orleans in the United States being
+                particularly famous for its Mardi Gras festivities.</p>
+        </section>
+
+        <section>
+            <h2>Traditions</h2>
+            <p>Mardi Gras is known for its vibrant and lively traditions. Here are some key elements of the celebration:
+            </p>
+            <ul>
+                <li>Parades with colorful floats: Elaborate parades take place throughout the Mardi Gras season,
+                    featuring
+                    stunning floats decorated with themes, often accompanied by marching bands and dance groups.</li>
+                <li>Costume parties and masquerade balls: Participants often dress up in vibrant costumes and attend
+                    masquerade balls, where they can wear masks and enjoy music, dancing, and entertainment.</li>
+                <li>Music, dancing, and live performances: Mardi Gras is synonymous with music and dancing. Traditional
+                    jazz, blues, and zydeco music fill the streets, and lively performances create an energetic
+                    atmosphere.
+                </li>
+                <li>Throwing and catching Mardi Gras beads: One of the most popular traditions is the exchange of
+                    colorful
+                    Mardi Gras beads. Revelers catch and collect these beads, often thrown from parade floats or
+                    exchanged
+                    between participants.</li>
+                <li>Enjoying traditional food: Mardi Gras is a time for indulgence, and traditional foods play a big
+                    role.
+                    King cake, a sweet pastry with a hidden figurine inside, is a staple. Other popular treats include
+                    beignets, gumbo, and jambalaya.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mardi Gras Colors</h2>
+            <p>The traditional colors associated with Mardi Gras are purple, green, and gold. These colors have symbolic
+                meanings:</p>
+            <ul>
+                <li>Purple represents justice: It signifies the dignity and justice that should prevail in society.</li>
+                <li>Green symbolizes faith: It represents the hope, faith, and optimism of the people.</li>
+                <li>Gold represents power: It embodies the wealth, glory, and prosperity associated with Mardi Gras.
+                </li>
+            </ul>
+            <p>These colors can often be seen in decorations, costumes, and accessories during the festivities.</p>
+        </section>
+
+        <section>
+            <h2>History of Mardi Gras</h2>
+            <p>Mardi Gras has a rich history that dates back centuries. It originated in Europe and was brought to the
+                United
+                States by French explorers, particularly in the city of New Orleans. Over time, Mardi Gras evolved into
+                the
+                vibrant celebration known today, blending French, Spanish, and African cultural influences.</p>
+            <p>New Orleans, Louisiana, is widely recognized as the Mardi Gras capital of the United States. The city
+                hosts
+                numerous parades, balls, and festivities, attracting visitors from around the world. However, the roots
+                of Mardi
+                Gras can be traced back to medieval Europe.</p>
+            <p>In medieval Europe, the Catholic Church introduced Lent, a period of fasting and penance, leading up to
+                Easter.
+                Mardi Gras, which means "Fat Tuesday" in French, was established as a day of indulgence and celebration
+                before
+                the fasting period began. The name "Fat Tuesday" refers to the tradition of consuming rich, fatty foods
+                before
+                the fasting period.</p>
+            <p>When French explorers settled in Louisiana, they brought their traditions with them, including Mardi
+                Gras. The
+                first recorded Mardi Gras celebration in Louisiana took place in 1699 when the French-Canadian explorer
+                Jean
+                Baptiste Le Moyne Sieur de Bienville arrived at a spot just south of present-day New Orleans on Mardi
+                Gras day.
+                Over time, Mardi Gras festivities became deeply ingrained in the culture of Louisiana.</p>
+            <p>In the 19th century, Mardi Gras in New Orleans grew in popularity and grandeur. The formation of Mardi
+                Gras
+                krewes, social clubs that organize parades and balls, became a central part of the celebration. Each
+                krewe
+                designs elaborate floats, selects a theme, and throws various items, including Mardi Gras beads,
+                doubloons, and
+                trinkets, to the crowds.</p>
+            <p>Throughout its history, Mardi Gras faced challenges, including interruptions due to wars, economic
+                downturns, and
+                natural disasters. However, the spirit of Mardi Gras has always prevailed, with the community coming
+                together to
+                ensure its continuation.</p>
+            <p>Today, Mardi Gras in New Orleans is a major cultural event, drawing millions of visitors from around the
+                world.
+                The celebration includes multiple parades, each organized by a different krewe, showcasing intricate
+                floats,
+                lively music, and exuberant crowds. The festivities extend over several weeks, with the climax on Fat
+                Tuesday,
+                the final day before Ash Wednesday and the start of Lent.</p>
+        </section>
+
+        <section>
+            <h2>Mayor of New Orleans</h2>
+            <p>The Mayor of New Orleans is an important figure in the city's government and plays a key role in the
+                administration and leadership of New Orleans. Here is some information about the current Mayor:</p>
+
+            <div class="mayor">
+                <h3>Mayor LaToya Cantrell</h3>
+                <div class="images">
+                    <img src="mayor2.jpg" alt="Mayor LaToya Cantrell" class="img1">
+                    <img src="mayor3.jpg" alt="Mayor LaToya Cantrell" class="img2">
+                    <img src="mayor4.jpg" alt="Mayor LaToya Cantrell" class="img3">
+                    <img src="mayor5.jpg" alt="Mayor LaToya Cantrell" class="img4">
+                </div>
+                <br><br>
+                <p>LaToya Cantrell is the current Mayor of New Orleans. She took office on May 7, 2018, becoming the
+                    first
+                    female mayor in the city's history. Mayor Cantrell is known for her commitment to public service and
+                    her
+                    efforts to address important issues facing the city.</p>
+                <p>Under Mayor Cantrell's leadership, New Orleans has focused on initiatives such as improving
+                    infrastructure,
+                    promoting economic development, and enhancing the quality of life for residents. She has been an
+                    advocate
+                    for community engagement and resilience in the face of challenges.</p>
+                <p>Prior to becoming Mayor, LaToya Cantrell served as a member of the New Orleans City Council,
+                    representing
+                    District B. She was recognized for her work in helping the city recover from Hurricane Katrina and
+                    for her
+                    efforts in revitalizing neighborhoods and supporting local businesses.</p>
+                <p>Mayor Cantrell's commitment to sustainability and environmental issues has led to initiatives such as
+                    advancing renewable energy, reducing carbon emissions, and promoting climate resilience. She has
+                    also
+                    championed affordable housing, education, and criminal justice reform.</p>
+                <p>Mayor Cantrell's leadership has been instrumental in guiding New Orleans through various challenges,
+                    including the COVID-19 pandemic and its impact on the city's economy and tourism industry.</p>
+            </div>
+
+            <!-- Add more mayor entries here if needed -->
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/MardiGrasNewOrleans"><img src="facebookIcon.png" alt="Facebook"
+                        target="_blank"></a>
+                <a href="https://www.instagram.com/mardigrasneworleans/"><img src="Insta2.png" alt="Instagram"
+                        target="_blank"></a>
+                <a href="https://twitter.com/MardiGrasNOLA"><img src="twitterIcon.png" alt="Twitter"
+                        target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"><img src="YouTube2.png" alt="Twitter"
+                        target="_blank"></a>
+                <br> <br>
+
+                <p>&copy; 2023 Mardi Gras. All rights reserved. Designed by Matanel Chouraqui.</p>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+        document.querySelector(".nav-icon").addEventListener("click", function () {
+            document.querySelector("nav ul").classList.toggle("active");
+        }
+        );
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
